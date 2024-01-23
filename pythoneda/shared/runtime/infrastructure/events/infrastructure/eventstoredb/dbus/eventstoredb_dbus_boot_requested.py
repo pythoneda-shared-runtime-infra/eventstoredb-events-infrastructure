@@ -1,8 +1,8 @@
 # vim: set fileencoding=utf-8
 """
-pythoneda/shared/runtime/events/lifecycle/infrastructure/dbus/dbus_eventstoredb_boot_requested.py
+pythoneda/shared/runtime/events/lifecycle/infrastructure/dbus/eventstoredb_dbus_boot_requested.py
 
-This file defines the DbusEventstoredbBootRequested class.
+This file defines the EventstoredbDbusBootRequested class.
 
 Copyright (C) 2023-today rydnr's pythoneda-shared-runtime-infrastructure/eventstoredb-events-infrastructure
 
@@ -32,11 +32,11 @@ from pythoneda.shared.runtime.infrastructure.events.eventstoredb.infrastructure.
 from typing import Dic, List
 
 
-class DbusEventstoredbEventstoredbBootRequested(BaseObject, ServiceInterface):
+class EventstoredbDbusBootRequested(BaseObject, ServiceInterface):
     """
     D-Bus interface for EventstoredbBootRequested.
 
-    Class name: DbusEventstoredbBootRequested
+    Class name: EventstoredbDbusBootRequested
 
     Responsibilities:
         - Define the d-bus interface for the EventstoredbBootRequested event.
@@ -47,7 +47,7 @@ class DbusEventstoredbEventstoredbBootRequested(BaseObject, ServiceInterface):
 
     def __init__(self):
         """
-        Creates a new DbusEventstoredbBootRequested.
+        Creates a new EventstoredbDbusBootRequested.
         """
         super().__init__(
             "Pythoneda_Shared_Runtime_Infrastructure_Events_Eventstoredb_EventstoredbBootRequested"

@@ -23,8 +23,8 @@ __path__ = __import__("pkgutil").extend_path(__path__, __name__)
 
 DBUS_PATH = "/pythoneda/runtime/infrastructure/eventstoredb"
 
-from .dbus_eventstoredb_booted import DbusEventstoredbBooted
-from .dbus_eventstoredb_boot_requested import DbusEventstoredbBootRequested
+from .eventstoredb_dbus_booted import EventstoredbDbusBooted
+from .eventstoredb_dbus_boot_requested import EventstoredbDbusBootRequested
 
 # vim: syntax=python ts=4 sw=4 sts=4 tw=79 sr et
 # Local Variables:
