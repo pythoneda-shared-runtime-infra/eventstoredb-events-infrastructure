@@ -24,12 +24,12 @@ from dbus_next.service import ServiceInterface, signal
 import json
 from pythoneda.shared import BaseObject
 from pythoneda.shared.runtime.infrastructure.events.eventstoredb import (
-    EventstoredbEventstoredbBooted,
+    EventstoredbBooted,
 )
-from pythoneda.shared.runtime.infrastructure.events.eventstoredb.infrastructure.dbus import (
+from pythoneda.shared.runtime.infrastructure.events.infrastructure.eventstoredb.dbus import (
     DBUS_PATH,
 )
-from typing import Dic, List
+from typing import Dict, List
 
 
 class EventstoredbDbusBooted(BaseObject, ServiceInterface):
