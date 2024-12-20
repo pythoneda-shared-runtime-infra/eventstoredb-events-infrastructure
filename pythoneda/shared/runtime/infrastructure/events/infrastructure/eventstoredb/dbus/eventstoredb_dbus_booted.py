@@ -82,8 +82,8 @@ class EventstoredbDbusBooted(BaseObject, ServiceInterface):
         """
         return [
             json.dumps(event.options),
-            event.id,
             json.dumps(event.previous_event_ids),
+            event.id,
         ]
 
     @classmethod
@@ -106,12 +106,11 @@ class EventstoredbDbusBooted(BaseObject, ServiceInterface):
         :return: The EventstoredbBooted event.
         :rtype: pythoneda.shared.runtime.infrastructure.events.eventstoredb.EventstoredbBooted
         """
-        options, event_id, prev_event_ids = message.body
+        options, prev_event_ids, event_id = message.body
         return EventstoredbBooted(
             json.loads(options),
-            None,
-            event_id,
             json.loads(prev_event_ids),
+            event_id,
         )
 
 
